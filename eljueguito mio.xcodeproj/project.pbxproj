@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04E2FBB619392EAE006B5880 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2FBB519392EAE006B5880 /* Foundation.framework */; };
+		04E2FBB819392EAE006B5880 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2FBB719392EAE006B5880 /* CoreGraphics.framework */; };
+		04E2FBBA19392EAE006B5880 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2FBB919392EAE006B5880 /* UIKit.framework */; };
+		04E2FBBC19392EAE006B5880 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2FBBB19392EAE006B5880 /* SpriteKit.framework */; };
+		04E2FBC219392EAE006B5880 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBC019392EAE006B5880 /* InfoPlist.strings */; };
+		04E2FBC419392EAE006B5880 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBC319392EAE006B5880 /* main.m */; };
+		04E2FBC819392EAE006B5880 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBC719392EAE006B5880 /* AppDelegate.m */; };
+		04E2FBCB19392EAE006B5880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBC919392EAE006B5880 /* Main.storyboard */; };
+		04E2FBCE19392EAF006B5880 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBCD19392EAF006B5880 /* ViewController.m */; };
+		04E2FBD119392EAF006B5880 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBD019392EAF006B5880 /* MyScene.m */; };
+		04E2FBD319392EAF006B5880 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBD219392EAF006B5880 /* Spaceship.png */; };
+		04E2FBD519392EAF006B5880 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBD419392EAF006B5880 /* Images.xcassets */; };
+		04E2FBDC19392EAF006B5880 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2FBDB19392EAF006B5880 /* XCTest.framework */; };
+		04E2FBDD19392EAF006B5880 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2FBB519392EAE006B5880 /* Foundation.framework */; };
+		04E2FBDE19392EAF006B5880 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2FBB919392EAE006B5880 /* UIKit.framework */; };
+		04E2FBE619392EAF006B5880 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBE419392EAF006B5880 /* InfoPlist.strings */; };
+		04E2FBE819392EAF006B5880 /* eljueguito_mioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBE719392EAF006B5880 /* eljueguito_mioTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04E2FBDF19392EAF006B5880 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04E2FBAA19392EAD006B5880 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04E2FBB119392EAD006B5880;
+			remoteInfo = "eljueguito mio";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04E2FBB219392EAE006B5880 /* eljueguito mio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eljueguito mio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E2FBB519392EAE006B5880 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04E2FBB719392EAE006B5880 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		04E2FBB919392EAE006B5880 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		04E2FBBB19392EAE006B5880 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		04E2FBBF19392EAE006B5880 /* eljueguito mio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eljueguito mio-Info.plist"; sourceTree = "<group>"; };
+		04E2FBC119392EAE006B5880 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04E2FBC319392EAE006B5880 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04E2FBC519392EAE006B5880 /* eljueguito mio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eljueguito mio-Prefix.pch"; sourceTree = "<group>"; };
+		04E2FBC619392EAE006B5880 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04E2FBC719392EAE006B5880 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04E2FBCA19392EAE006B5880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04E2FBCC19392EAE006B5880 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04E2FBCD19392EAF006B5880 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04E2FBCF19392EAF006B5880 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		04E2FBD019392EAF006B5880 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		04E2FBD219392EAF006B5880 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		04E2FBD419392EAF006B5880 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		04E2FBDA19392EAF006B5880 /* eljueguito mioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eljueguito mioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E2FBDB19392EAF006B5880 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		04E2FBE319392EAF006B5880 /* eljueguito mioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eljueguito mioTests-Info.plist"; sourceTree = "<group>"; };
+		04E2FBE519392EAF006B5880 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04E2FBE719392EAF006B5880 /* eljueguito_mioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eljueguito_mioTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04E2FBAF19392EAD006B5880 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E2FBB819392EAE006B5880 /* CoreGraphics.framework in Frameworks */,
+				04E2FBBA19392EAE006B5880 /* UIKit.framework in Frameworks */,
+				04E2FBBC19392EAE006B5880 /* SpriteKit.framework in Frameworks */,
+				04E2FBB619392EAE006B5880 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E2FBD719392EAF006B5880 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E2FBDC19392EAF006B5880 /* XCTest.framework in Frameworks */,
+				04E2FBDE19392EAF006B5880 /* UIKit.framework in Frameworks */,
+				04E2FBDD19392EAF006B5880 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E2FBA919392EAD006B5880 = {
+			isa = PBXGroup;
+			children = (
+				04E2FBBD19392EAE006B5880 /* eljueguito mio */,
+				04E2FBE119392EAF006B5880 /* eljueguito mioTests */,
+				04E2FBB419392EAE006B5880 /* Frameworks */,
+				04E2FBB319392EAE006B5880 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04E2FBB319392EAE006B5880 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04E2FBB219392EAE006B5880 /* eljueguito mio.app */,
+				04E2FBDA19392EAF006B5880 /* eljueguito mioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04E2FBB419392EAE006B5880 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04E2FBB519392EAE006B5880 /* Foundation.framework */,
+				04E2FBB719392EAE006B5880 /* CoreGraphics.framework */,
+				04E2FBB919392EAE006B5880 /* UIKit.framework */,
+				04E2FBBB19392EAE006B5880 /* SpriteKit.framework */,
+				04E2FBDB19392EAF006B5880 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04E2FBBD19392EAE006B5880 /* eljueguito mio */ = {
+			isa = PBXGroup;
+			children = (
+				04E2FBC619392EAE006B5880 /* AppDelegate.h */,
+				04E2FBC719392EAE006B5880 /* AppDelegate.m */,
+				04E2FBC919392EAE006B5880 /* Main.storyboard */,
+				04E2FBCC19392EAE006B5880 /* ViewController.h */,
+				04E2FBCD19392EAF006B5880 /* ViewController.m */,
+				04E2FBCF19392EAF006B5880 /* MyScene.h */,
+				04E2FBD019392EAF006B5880 /* MyScene.m */,
+				04E2FBD219392EAF006B5880 /* Spaceship.png */,
+				04E2FBD419392EAF006B5880 /* Images.xcassets */,
+				04E2FBBE19392EAE006B5880 /* Supporting Files */,
+			);
+			path = "eljueguito mio";
+			sourceTree = "<group>";
+		};
+		04E2FBBE19392EAE006B5880 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04E2FBBF19392EAE006B5880 /* eljueguito mio-Info.plist */,
+				04E2FBC019392EAE006B5880 /* InfoPlist.strings */,
+				04E2FBC319392EAE006B5880 /* main.m */,
+				04E2FBC519392EAE006B5880 /* eljueguito mio-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04E2FBE119392EAF006B5880 /* eljueguito mioTests */ = {
+			isa = PBXGroup;
+			children = (
+				04E2FBE719392EAF006B5880 /* eljueguito_mioTests.m */,
+				04E2FBE219392EAF006B5880 /* Supporting Files */,
+			);
+			path = "eljueguito mioTests";
+			sourceTree = "<group>";
+		};
+		04E2FBE219392EAF006B5880 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04E2FBE319392EAF006B5880 /* eljueguito mioTests-Info.plist */,
+				04E2FBE419392EAF006B5880 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04E2FBB119392EAD006B5880 /* eljueguito mio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E2FBEB19392EAF006B5880 /* Build configuration list for PBXNativeTarget "eljueguito mio" */;
+			buildPhases = (
+				04E2FBAE19392EAD006B5880 /* Sources */,
+				04E2FBAF19392EAD006B5880 /* Frameworks */,
+				04E2FBB019392EAD006B5880 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "eljueguito mio";
+			productName = "eljueguito mio";
+			productReference = 04E2FBB219392EAE006B5880 /* eljueguito mio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04E2FBD919392EAF006B5880 /* eljueguito mioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E2FBEE19392EAF006B5880 /* Build configuration list for PBXNativeTarget "eljueguito mioTests" */;
+			buildPhases = (
+				04E2FBD619392EAF006B5880 /* Sources */,
+				04E2FBD719392EAF006B5880 /* Frameworks */,
+				04E2FBD819392EAF006B5880 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04E2FBE019392EAF006B5880 /* PBXTargetDependency */,
+			);
+			name = "eljueguito mioTests";
+			productName = "eljueguito mioTests";
+			productReference = 04E2FBDA19392EAF006B5880 /* eljueguito mioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04E2FBAA19392EAD006B5880 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					04E2FBD919392EAF006B5880 = {
+						TestTargetID = 04E2FBB119392EAD006B5880;
+					};
+				};
+			};
+			buildConfigurationList = 04E2FBAD19392EAD006B5880 /* Build configuration list for PBXProject "eljueguito mio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04E2FBA919392EAD006B5880;
+			productRefGroup = 04E2FBB319392EAE006B5880 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04E2FBB119392EAD006B5880 /* eljueguito mio */,
+				04E2FBD919392EAF006B5880 /* eljueguito mioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04E2FBB019392EAD006B5880 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E2FBC219392EAE006B5880 /* InfoPlist.strings in Resources */,
+				04E2FBD519392EAF006B5880 /* Images.xcassets in Resources */,
+				04E2FBD319392EAF006B5880 /* Spaceship.png in Resources */,
+				04E2FBCB19392EAE006B5880 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E2FBD819392EAF006B5880 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E2FBE619392EAF006B5880 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04E2FBAE19392EAD006B5880 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E2FBD119392EAF006B5880 /* MyScene.m in Sources */,
+				04E2FBCE19392EAF006B5880 /* ViewController.m in Sources */,
+				04E2FBC819392EAE006B5880 /* AppDelegate.m in Sources */,
+				04E2FBC419392EAE006B5880 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E2FBD619392EAF006B5880 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E2FBE819392EAF006B5880 /* eljueguito_mioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04E2FBE019392EAF006B5880 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04E2FBB119392EAD006B5880 /* eljueguito mio */;
+			targetProxy = 04E2FBDF19392EAF006B5880 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04E2FBC019392EAE006B5880 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E2FBC119392EAE006B5880 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04E2FBC919392EAE006B5880 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E2FBCA19392EAE006B5880 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04E2FBE419392EAF006B5880 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E2FBE519392EAF006B5880 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04E2FBE919392EAF006B5880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04E2FBEA19392EAF006B5880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04E2FBEC19392EAF006B5880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eljueguito mio/eljueguito mio-Prefix.pch";
+				INFOPLIST_FILE = "eljueguito mio/eljueguito mio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		04E2FBED19392EAF006B5880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eljueguito mio/eljueguito mio-Prefix.pch";
+				INFOPLIST_FILE = "eljueguito mio/eljueguito mio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		04E2FBEF19392EAF006B5880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/eljueguito mio.app/eljueguito mio";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eljueguito mio/eljueguito mio-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "eljueguito mioTests/eljueguito mioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		04E2FBF019392EAF006B5880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/eljueguito mio.app/eljueguito mio";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eljueguito mio/eljueguito mio-Prefix.pch";
+				INFOPLIST_FILE = "eljueguito mioTests/eljueguito mioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04E2FBAD19392EAD006B5880 /* Build configuration list for PBXProject "eljueguito mio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E2FBE919392EAF006B5880 /* Debug */,
+				04E2FBEA19392EAF006B5880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E2FBEB19392EAF006B5880 /* Build configuration list for PBXNativeTarget "eljueguito mio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E2FBEC19392EAF006B5880 /* Debug */,
+				04E2FBED19392EAF006B5880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04E2FBEE19392EAF006B5880 /* Build configuration list for PBXNativeTarget "eljueguito mioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E2FBEF19392EAF006B5880 /* Debug */,
+				04E2FBF019392EAF006B5880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04E2FBAA19392EAD006B5880 /* Project object */;
+}
