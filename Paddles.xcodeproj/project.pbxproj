@@ -24,6 +24,16 @@
 		04E2FBDE19392EAF006B5880 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2FBB919392EAE006B5880 /* UIKit.framework */; };
 		04E2FBE619392EAF006B5880 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBE419392EAF006B5880 /* InfoPlist.strings */; };
 		04E2FBE819392EAF006B5880 /* eljueguito_mioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBE719392EAF006B5880 /* eljueguito_mioTests.m */; };
+		04E2FBF319392F16006B5880 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBF219392F16006B5880 /* Menu.m */; };
+		04E2FBF619392F44006B5880 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBF519392F44006B5880 /* GameOver.m */; };
+		04E2FBFD1939313D006B5880 /* paddleright.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBF71939313D006B5880 /* paddleright.png */; };
+		04E2FBFE1939313D006B5880 /* paddleleft.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBF81939313D006B5880 /* paddleleft.png */; };
+		04E2FBFF1939313D006B5880 /* paddleup.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBF91939313D006B5880 /* paddleup.png */; };
+		04E2FC001939313D006B5880 /* Untitled-4.ai in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBFA1939313D006B5880 /* Untitled-4.ai */; };
+		04E2FC011939313D006B5880 /* paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBFB1939313D006B5880 /* paddle.png */; };
+		04E2FC021939313D006B5880 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBFC1939313D006B5880 /* ball.png */; };
+		04E2FC0519393151006B5880 /* gameover.caf in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FC0319393151006B5880 /* gameover.caf */; };
+		04E2FC0619393151006B5880 /* bounce 2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FC0419393151006B5880 /* bounce 2.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,15 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04E2FBB219392EAE006B5880 /* eljueguito mio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eljueguito mio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E2FBB219392EAE006B5880 /* Paddles.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paddles.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E2FBB519392EAE006B5880 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04E2FBB719392EAE006B5880 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		04E2FBB919392EAE006B5880 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		04E2FBBB19392EAE006B5880 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		04E2FBBF19392EAE006B5880 /* eljueguito mio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eljueguito mio-Info.plist"; sourceTree = "<group>"; };
+		04E2FBBF19392EAE006B5880 /* Paddles.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Paddles.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
 		04E2FBC119392EAE006B5880 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04E2FBC319392EAE006B5880 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		04E2FBC519392EAE006B5880 /* eljueguito mio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eljueguito mio-Prefix.pch"; sourceTree = "<group>"; };
+		04E2FBC519392EAE006B5880 /* Paddles.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Paddles.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
 		04E2FBC619392EAE006B5880 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04E2FBC719392EAE006B5880 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		04E2FBCA19392EAE006B5880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,11 +65,23 @@
 		04E2FBD019392EAF006B5880 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 		04E2FBD219392EAF006B5880 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		04E2FBD419392EAF006B5880 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		04E2FBDA19392EAF006B5880 /* eljueguito mioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eljueguito mioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E2FBDA19392EAF006B5880 /* Paddles.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Paddles.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E2FBDB19392EAF006B5880 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		04E2FBE319392EAF006B5880 /* eljueguito mioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eljueguito mioTests-Info.plist"; sourceTree = "<group>"; };
+		04E2FBE319392EAF006B5880 /* Paddles.temp_caseinsensitive_renameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Paddles.temp_caseinsensitive_renameTests-Info.plist"; sourceTree = "<group>"; };
 		04E2FBE519392EAF006B5880 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04E2FBE719392EAF006B5880 /* eljueguito_mioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eljueguito_mioTests.m; sourceTree = "<group>"; };
+		04E2FBF119392F16006B5880 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		04E2FBF219392F16006B5880 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
+		04E2FBF419392F44006B5880 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
+		04E2FBF519392F44006B5880 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
+		04E2FBF71939313D006B5880 /* paddleright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddleright.png; sourceTree = "<group>"; };
+		04E2FBF81939313D006B5880 /* paddleleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddleleft.png; sourceTree = "<group>"; };
+		04E2FBF91939313D006B5880 /* paddleup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddleup.png; sourceTree = "<group>"; };
+		04E2FBFA1939313D006B5880 /* Untitled-4.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Untitled-4.ai"; sourceTree = "<group>"; };
+		04E2FBFB1939313D006B5880 /* paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddle.png; sourceTree = "<group>"; };
+		04E2FBFC1939313D006B5880 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		04E2FC0319393151006B5880 /* gameover.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameover.caf; sourceTree = "<group>"; };
+		04E2FC0419393151006B5880 /* bounce 2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bounce 2.caf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +112,12 @@
 		04E2FBA919392EAD006B5880 = {
 			isa = PBXGroup;
 			children = (
+				04E2FBF71939313D006B5880 /* paddleright.png */,
+				04E2FBF81939313D006B5880 /* paddleleft.png */,
+				04E2FBF91939313D006B5880 /* paddleup.png */,
+				04E2FBFA1939313D006B5880 /* Untitled-4.ai */,
+				04E2FBFB1939313D006B5880 /* paddle.png */,
+				04E2FBFC1939313D006B5880 /* ball.png */,
 				04E2FBBD19392EAE006B5880 /* eljueguito mio */,
 				04E2FBE119392EAF006B5880 /* eljueguito mioTests */,
 				04E2FBB419392EAE006B5880 /* Frameworks */,
@@ -100,8 +128,8 @@
 		04E2FBB319392EAE006B5880 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04E2FBB219392EAE006B5880 /* eljueguito mio.app */,
-				04E2FBDA19392EAF006B5880 /* eljueguito mioTests.xctest */,
+				04E2FBB219392EAE006B5880 /* Paddles.temp_caseinsensitive_rename.app */,
+				04E2FBDA19392EAF006B5880 /* Paddles.temp_caseinsensitive_renameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,13 +149,19 @@
 		04E2FBBD19392EAE006B5880 /* eljueguito mio */ = {
 			isa = PBXGroup;
 			children = (
+				04E2FC0319393151006B5880 /* gameover.caf */,
+				04E2FC0419393151006B5880 /* bounce 2.caf */,
 				04E2FBC619392EAE006B5880 /* AppDelegate.h */,
 				04E2FBC719392EAE006B5880 /* AppDelegate.m */,
 				04E2FBC919392EAE006B5880 /* Main.storyboard */,
 				04E2FBCC19392EAE006B5880 /* ViewController.h */,
 				04E2FBCD19392EAF006B5880 /* ViewController.m */,
+				04E2FBF119392F16006B5880 /* Menu.h */,
+				04E2FBF219392F16006B5880 /* Menu.m */,
 				04E2FBCF19392EAF006B5880 /* MyScene.h */,
 				04E2FBD019392EAF006B5880 /* MyScene.m */,
+				04E2FBF419392F44006B5880 /* GameOver.h */,
+				04E2FBF519392F44006B5880 /* GameOver.m */,
 				04E2FBD219392EAF006B5880 /* Spaceship.png */,
 				04E2FBD419392EAF006B5880 /* Images.xcassets */,
 				04E2FBBE19392EAE006B5880 /* Supporting Files */,
@@ -138,10 +172,10 @@
 		04E2FBBE19392EAE006B5880 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				04E2FBBF19392EAE006B5880 /* eljueguito mio-Info.plist */,
+				04E2FBBF19392EAE006B5880 /* Paddles.temp_caseinsensitive_rename-Info.plist */,
 				04E2FBC019392EAE006B5880 /* InfoPlist.strings */,
 				04E2FBC319392EAE006B5880 /* main.m */,
-				04E2FBC519392EAE006B5880 /* eljueguito mio-Prefix.pch */,
+				04E2FBC519392EAE006B5880 /* Paddles.temp_caseinsensitive_rename-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -158,7 +192,7 @@
 		04E2FBE219392EAF006B5880 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				04E2FBE319392EAF006B5880 /* eljueguito mioTests-Info.plist */,
+				04E2FBE319392EAF006B5880 /* Paddles.temp_caseinsensitive_renameTests-Info.plist */,
 				04E2FBE419392EAF006B5880 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -167,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04E2FBB119392EAD006B5880 /* eljueguito mio */ = {
+		04E2FBB119392EAD006B5880 /* Paddles.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04E2FBEB19392EAF006B5880 /* Build configuration list for PBXNativeTarget "eljueguito mio" */;
+			buildConfigurationList = 04E2FBEB19392EAF006B5880 /* Build configuration list for PBXNativeTarget "Paddles.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				04E2FBAE19392EAD006B5880 /* Sources */,
 				04E2FBAF19392EAD006B5880 /* Frameworks */,
@@ -179,14 +213,14 @@
 			);
 			dependencies = (
 			);
-			name = "eljueguito mio";
+			name = Paddles.temp_caseinsensitive_rename;
 			productName = "eljueguito mio";
-			productReference = 04E2FBB219392EAE006B5880 /* eljueguito mio.app */;
+			productReference = 04E2FBB219392EAE006B5880 /* Paddles.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
-		04E2FBD919392EAF006B5880 /* eljueguito mioTests */ = {
+		04E2FBD919392EAF006B5880 /* Paddles.temp_caseinsensitive_renameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04E2FBEE19392EAF006B5880 /* Build configuration list for PBXNativeTarget "eljueguito mioTests" */;
+			buildConfigurationList = 04E2FBEE19392EAF006B5880 /* Build configuration list for PBXNativeTarget "Paddles.temp_caseinsensitive_renameTests" */;
 			buildPhases = (
 				04E2FBD619392EAF006B5880 /* Sources */,
 				04E2FBD719392EAF006B5880 /* Frameworks */,
@@ -197,9 +231,9 @@
 			dependencies = (
 				04E2FBE019392EAF006B5880 /* PBXTargetDependency */,
 			);
-			name = "eljueguito mioTests";
+			name = Paddles.temp_caseinsensitive_renameTests;
 			productName = "eljueguito mioTests";
-			productReference = 04E2FBDA19392EAF006B5880 /* eljueguito mioTests.xctest */;
+			productReference = 04E2FBDA19392EAF006B5880 /* Paddles.temp_caseinsensitive_renameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -209,14 +243,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = mac;
+				ORGANIZATIONNAME = "BlueStars Studios";
 				TargetAttributes = {
 					04E2FBD919392EAF006B5880 = {
 						TestTargetID = 04E2FBB119392EAD006B5880;
 					};
 				};
 			};
-			buildConfigurationList = 04E2FBAD19392EAD006B5880 /* Build configuration list for PBXProject "eljueguito mio" */;
+			buildConfigurationList = 04E2FBAD19392EAD006B5880 /* Build configuration list for PBXProject "Paddles" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,8 +263,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04E2FBB119392EAD006B5880 /* eljueguito mio */,
-				04E2FBD919392EAF006B5880 /* eljueguito mioTests */,
+				04E2FBB119392EAD006B5880 /* Paddles.temp_caseinsensitive_rename */,
+				04E2FBD919392EAF006B5880 /* Paddles.temp_caseinsensitive_renameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,9 +275,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E2FBC219392EAE006B5880 /* InfoPlist.strings in Resources */,
+				04E2FBFD1939313D006B5880 /* paddleright.png in Resources */,
+				04E2FBFF1939313D006B5880 /* paddleup.png in Resources */,
+				04E2FC0519393151006B5880 /* gameover.caf in Resources */,
 				04E2FBD519392EAF006B5880 /* Images.xcassets in Resources */,
+				04E2FC011939313D006B5880 /* paddle.png in Resources */,
+				04E2FC0619393151006B5880 /* bounce 2.caf in Resources */,
 				04E2FBD319392EAF006B5880 /* Spaceship.png in Resources */,
+				04E2FC021939313D006B5880 /* ball.png in Resources */,
+				04E2FBFE1939313D006B5880 /* paddleleft.png in Resources */,
 				04E2FBCB19392EAE006B5880 /* Main.storyboard in Resources */,
+				04E2FC001939313D006B5880 /* Untitled-4.ai in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E2FBF319392F16006B5880 /* Menu.m in Sources */,
 				04E2FBD119392EAF006B5880 /* MyScene.m in Sources */,
 				04E2FBCE19392EAF006B5880 /* ViewController.m in Sources */,
+				04E2FBF619392F44006B5880 /* GameOver.m in Sources */,
 				04E2FBC819392EAE006B5880 /* AppDelegate.m in Sources */,
 				04E2FBC419392EAE006B5880 /* main.m in Sources */,
 			);
@@ -282,7 +326,7 @@
 /* Begin PBXTargetDependency section */
 		04E2FBE019392EAF006B5880 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 04E2FBB119392EAD006B5880 /* eljueguito mio */;
+			target = 04E2FBB119392EAD006B5880 /* Paddles.temp_caseinsensitive_rename */;
 			targetProxy = 04E2FBDF19392EAF006B5880 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -391,9 +435,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "eljueguito mio/eljueguito mio-Prefix.pch";
-				INFOPLIST_FILE = "eljueguito mio/eljueguito mio-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "eljueguito mio/Paddles.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "eljueguito mio/Paddles.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = Paddles.temp_caseinsensitive_rename;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -405,9 +449,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "eljueguito mio/eljueguito mio-Prefix.pch";
-				INFOPLIST_FILE = "eljueguito mio/eljueguito mio-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "eljueguito mio/Paddles.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "eljueguito mio/Paddles.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = Paddles.temp_caseinsensitive_rename;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -428,8 +472,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "eljueguito mioTests/eljueguito mioTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "eljueguito mioTests/Paddles.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_NAME = Paddles.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -446,8 +490,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eljueguito mio/eljueguito mio-Prefix.pch";
-				INFOPLIST_FILE = "eljueguito mioTests/eljueguito mioTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "eljueguito mioTests/Paddles.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_NAME = Paddles.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -456,7 +500,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04E2FBAD19392EAD006B5880 /* Build configuration list for PBXProject "eljueguito mio" */ = {
+		04E2FBAD19392EAD006B5880 /* Build configuration list for PBXProject "Paddles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04E2FBE919392EAF006B5880 /* Debug */,
@@ -465,21 +509,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04E2FBEB19392EAF006B5880 /* Build configuration list for PBXNativeTarget "eljueguito mio" */ = {
+		04E2FBEB19392EAF006B5880 /* Build configuration list for PBXNativeTarget "Paddles.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04E2FBEC19392EAF006B5880 /* Debug */,
 				04E2FBED19392EAF006B5880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		04E2FBEE19392EAF006B5880 /* Build configuration list for PBXNativeTarget "eljueguito mioTests" */ = {
+		04E2FBEE19392EAF006B5880 /* Build configuration list for PBXNativeTarget "Paddles.temp_caseinsensitive_renameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04E2FBEF19392EAF006B5880 /* Debug */,
 				04E2FBF019392EAF006B5880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
