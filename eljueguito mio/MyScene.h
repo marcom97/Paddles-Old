@@ -9,5 +9,8 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface MyScene : SKScene <SKPhysicsContactDelegate>
+{
+    SKSpriteNode *ball;
+}
 
 @end

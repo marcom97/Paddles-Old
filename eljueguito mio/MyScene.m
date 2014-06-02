@@ -28,7 +28,9 @@ static const uint32_t bordercategory = 4;
 -(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         
-        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Untitled-4"]];
+        SKSpriteNode *Background = [SKSpriteNode spriteNodeWithImageNamed:@"Background"];
+        Background.position = CGPointMake(Background.size.width/2, Background.size.height/2);
+        [self addChild:Background];
         
         self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
         self.physicsBody.categoryBitMask = bordercategory ;
@@ -51,7 +53,8 @@ static const uint32_t bordercategory = 4;
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    
+    [ball.physicsBody applyImpulse:CGVectorMake(4, 4)];
+
 }
 
 int score1 = 0;
@@ -115,7 +118,7 @@ int score1 = 0;
 
 - (void) addBall {
     
-    SKSpriteNode *ball = [SKSpriteNode spriteNodeWithImageNamed:@"ball"];
+    ball = [SKSpriteNode spriteNodeWithImageNamed:@"ball"];
     
     
     ball.position = CGPointMake(self.size.width/2,self.size.height/2);;
@@ -123,7 +126,7 @@ int score1 = 0;
     
     
     
-    ball.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:ball.frame.size.width/2];
+    ball.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:27/2];
     ball.physicsBody.friction = 0;
     ball.physicsBody.linearDamping = 0;
     ball.physicsBody.restitution = 1.0f;
@@ -133,14 +136,13 @@ int score1 = 0;
     
     [self addChild:ball];
     
-    [ball.physicsBody applyImpulse:CGVectorMake(4,4)];
 }
 
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
-        CGPoint newPosition = CGPointMake(location.x, 13);
+        CGPoint newPosition = CGPointMake(location.x, 12.5);
         
         
         if (newPosition.x < self.paddle.size.width / 2) {
@@ -157,7 +159,7 @@ int score1 = 0;
     
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
-        CGPoint newPosition = CGPointMake(location.x, 467);
+        CGPoint newPosition = CGPointMake(location.x, self.size.height-12.5);
         
         
         
@@ -215,9 +217,9 @@ int score1 = 0;
     
     self.paddle = [SKSpriteNode spriteNodeWithImageNamed:@"paddle"];
     
-    self.paddle.position = CGPointMake(self.size.width/2,13);
+    self.paddle.position = CGPointMake(self.size.width/2,12.5);
     
-    self.paddle.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.paddle.frame.size];
+    self.paddle.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(100, 25)];
     
     self.paddle.physicsBody.dynamic = NO;
     self.paddle.physicsBody.categoryBitMask = paddlecategory;
@@ -231,11 +233,12 @@ int score1 = 0;
     
     self.paddleup = [SKSpriteNode spriteNodeWithImageNamed:@"paddle"];
     
-    self.paddleup.position = CGPointMake(size.width/2,self.size.height-(_paddleup.size.height/2));
+    self.paddleup.position = CGPointMake(size.width/2,self.size.height-12.5);
     
-    self.paddleup.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.paddleup.frame.size];
+    self.paddleup.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(100, 25)];
     
     self.paddleup.physicsBody.dynamic = NO;
+    self.paddleup.zRotation = M_PI;
     self.paddleup.physicsBody.categoryBitMask = paddlecategory;
     
     
@@ -248,12 +251,12 @@ int score1 = 0;
     
     self.paddleleft = [SKSpriteNode spriteNodeWithImageNamed:@"paddle"];
     
-    self.paddleleft.position = CGPointMake(13,size.height/2);
+    self.paddleleft.position = CGPointMake(12.5,size.height/2);
     
-    self.paddleleft.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.paddleleft.frame.size];
+    self.paddleleft.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(100, 25)];
     
     self.paddleleft.physicsBody.dynamic = NO;
-    self.paddleleft.zRotation = M_PI/2;
+    self.paddleleft.zRotation = -M_PI/2;
 
     self.paddleleft.physicsBody.categoryBitMask = paddlecategory;
     
@@ -267,10 +270,10 @@ int score1 = 0;
     
     self.paddleright = [SKSpriteNode spriteNodeWithImageNamed:@"paddle"];
     
-    self.paddleright.position = CGPointMake(307,size.height/2);
+    self.paddleright.position = CGPointMake(307.5,size.height/2);
 
     
-    self.paddleright.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.paddleright.frame.size];
+    self.paddleright.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(100, 25)];
 
     self.paddleright.physicsBody.dynamic = NO;
     self.paddleright.zRotation = M_PI/2;

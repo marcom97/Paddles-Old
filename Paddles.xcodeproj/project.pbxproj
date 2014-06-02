@@ -26,10 +26,11 @@
 		04E2FBE819392EAF006B5880 /* eljueguito_mioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBE719392EAF006B5880 /* eljueguito_mioTests.m */; };
 		04E2FBF319392F16006B5880 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBF219392F16006B5880 /* Menu.m */; };
 		04E2FBF619392F44006B5880 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBF519392F44006B5880 /* GameOver.m */; };
-		04E2FC021939313D006B5880 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBFC1939313D006B5880 /* ball.png */; };
 		04E2FC0519393151006B5880 /* gameover.caf in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FC0319393151006B5880 /* gameover.caf */; };
 		04E2FC0619393151006B5880 /* bounce 2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FC0419393151006B5880 /* bounce 2.caf */; };
-		A99D6AC819393C0300D16374 /* paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = A99D6AC719393C0300D16374 /* paddle.png */; };
+		A9103E34193B9278006828C9 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9103E33193B9278006828C9 /* Background@2x.png */; };
+		A9103E3C193BC934006828C9 /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = A9103E3B193BC934006828C9 /* Ball.png */; };
+		A9103E3E193BCD20006828C9 /* Paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = A9103E3D193BCD20006828C9 /* Paddle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,15 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04E2FBB219392EAE006B5880 /* Paddles.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paddles.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E2FBB219392EAE006B5880 /* Paddles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paddles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E2FBB519392EAE006B5880 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04E2FBB719392EAE006B5880 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		04E2FBB919392EAE006B5880 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		04E2FBBB19392EAE006B5880 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		04E2FBBF19392EAE006B5880 /* Paddles.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Paddles.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
+		04E2FBBF19392EAE006B5880 /* Paddles-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Paddles-Info.plist"; sourceTree = "<group>"; };
 		04E2FBC119392EAE006B5880 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04E2FBC319392EAE006B5880 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		04E2FBC519392EAE006B5880 /* Paddles.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Paddles.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
+		04E2FBC519392EAE006B5880 /* Paddles-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Paddles-Prefix.pch"; sourceTree = "<group>"; };
 		04E2FBC619392EAE006B5880 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04E2FBC719392EAE006B5880 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		04E2FBCA19392EAE006B5880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,7 +62,7 @@
 		04E2FBD019392EAF006B5880 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 		04E2FBD219392EAF006B5880 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		04E2FBD419392EAF006B5880 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		04E2FBDA19392EAF006B5880 /* Paddles.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Paddles.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E2FBDA19392EAF006B5880 /* Paddles.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Paddles.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E2FBDB19392EAF006B5880 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		04E2FBE319392EAF006B5880 /* Paddles.temp_caseinsensitive_renameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Paddles.temp_caseinsensitive_renameTests-Info.plist"; sourceTree = "<group>"; };
 		04E2FBE519392EAF006B5880 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -70,10 +71,11 @@
 		04E2FBF219392F16006B5880 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		04E2FBF419392F44006B5880 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
 		04E2FBF519392F44006B5880 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
-		04E2FBFC1939313D006B5880 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		04E2FC0319393151006B5880 /* gameover.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameover.caf; sourceTree = "<group>"; };
 		04E2FC0419393151006B5880 /* bounce 2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bounce 2.caf"; sourceTree = "<group>"; };
-		A99D6AC719393C0300D16374 /* paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddle.png; sourceTree = "<group>"; };
+		A9103E33193B9278006828C9 /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		A9103E3B193BC934006828C9 /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball.png; sourceTree = "<group>"; };
+		A9103E3D193BCD20006828C9 /* Paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paddle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +106,6 @@
 		04E2FBA919392EAD006B5880 = {
 			isa = PBXGroup;
 			children = (
-				A99D6AC719393C0300D16374 /* paddle.png */,
-				04E2FBFC1939313D006B5880 /* ball.png */,
 				04E2FBBD19392EAE006B5880 /* eljueguito mio */,
 				04E2FBE119392EAF006B5880 /* eljueguito mioTests */,
 				04E2FBB419392EAE006B5880 /* Frameworks */,
@@ -116,8 +116,8 @@
 		04E2FBB319392EAE006B5880 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04E2FBB219392EAE006B5880 /* Paddles.temp_caseinsensitive_rename.app */,
-				04E2FBDA19392EAF006B5880 /* Paddles.temp_caseinsensitive_renameTests.xctest */,
+				04E2FBB219392EAE006B5880 /* Paddles.app */,
+				04E2FBDA19392EAF006B5880 /* Paddles.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,10 +160,13 @@
 		04E2FBBE19392EAE006B5880 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				04E2FBBF19392EAE006B5880 /* Paddles.temp_caseinsensitive_rename-Info.plist */,
+				A9103E3D193BCD20006828C9 /* Paddle.png */,
+				A9103E33193B9278006828C9 /* Background@2x.png */,
+				A9103E3B193BC934006828C9 /* Ball.png */,
+				04E2FBBF19392EAE006B5880 /* Paddles-Info.plist */,
 				04E2FBC019392EAE006B5880 /* InfoPlist.strings */,
 				04E2FBC319392EAE006B5880 /* main.m */,
-				04E2FBC519392EAE006B5880 /* Paddles.temp_caseinsensitive_rename-Prefix.pch */,
+				04E2FBC519392EAE006B5880 /* Paddles-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -189,9 +192,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04E2FBB119392EAD006B5880 /* Paddles.temp_caseinsensitive_rename */ = {
+		04E2FBB119392EAD006B5880 /* Paddles.temp_caseinsensitive_rename.temp_caseinsensitive_rename.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04E2FBEB19392EAF006B5880 /* Build configuration list for PBXNativeTarget "Paddles.temp_caseinsensitive_rename" */;
+			buildConfigurationList = 04E2FBEB19392EAF006B5880 /* Build configuration list for PBXNativeTarget "Paddles.temp_caseinsensitive_rename.temp_caseinsensitive_rename.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				04E2FBAE19392EAD006B5880 /* Sources */,
 				04E2FBAF19392EAD006B5880 /* Frameworks */,
@@ -202,14 +205,14 @@
 			);
 			dependencies = (
 			);
-			name = Paddles.temp_caseinsensitive_rename;
+			name = Paddles.temp_caseinsensitive_rename.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
 			productName = "eljueguito mio";
-			productReference = 04E2FBB219392EAE006B5880 /* Paddles.temp_caseinsensitive_rename.app */;
+			productReference = 04E2FBB219392EAE006B5880 /* Paddles.app */;
 			productType = "com.apple.product-type.application";
 		};
-		04E2FBD919392EAF006B5880 /* Paddles.temp_caseinsensitive_renameTests */ = {
+		04E2FBD919392EAF006B5880 /* Paddles.temp_caseinsensitive_rename.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04E2FBEE19392EAF006B5880 /* Build configuration list for PBXNativeTarget "Paddles.temp_caseinsensitive_renameTests" */;
+			buildConfigurationList = 04E2FBEE19392EAF006B5880 /* Build configuration list for PBXNativeTarget "Paddles.temp_caseinsensitive_rename.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests" */;
 			buildPhases = (
 				04E2FBD619392EAF006B5880 /* Sources */,
 				04E2FBD719392EAF006B5880 /* Frameworks */,
@@ -220,9 +223,9 @@
 			dependencies = (
 				04E2FBE019392EAF006B5880 /* PBXTargetDependency */,
 			);
-			name = Paddles.temp_caseinsensitive_renameTests;
+			name = Paddles.temp_caseinsensitive_rename.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
 			productName = "eljueguito mioTests";
-			productReference = 04E2FBDA19392EAF006B5880 /* Paddles.temp_caseinsensitive_renameTests.xctest */;
+			productReference = 04E2FBDA19392EAF006B5880 /* Paddles.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -252,8 +255,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04E2FBB119392EAD006B5880 /* Paddles.temp_caseinsensitive_rename */,
-				04E2FBD919392EAF006B5880 /* Paddles.temp_caseinsensitive_renameTests */,
+				04E2FBB119392EAD006B5880 /* Paddles.temp_caseinsensitive_rename.temp_caseinsensitive_rename.temp_caseinsensitive_rename */,
+				04E2FBD919392EAF006B5880 /* Paddles.temp_caseinsensitive_rename.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,12 +268,13 @@
 			files = (
 				04E2FBC219392EAE006B5880 /* InfoPlist.strings in Resources */,
 				04E2FC0519393151006B5880 /* gameover.caf in Resources */,
+				A9103E3E193BCD20006828C9 /* Paddle.png in Resources */,
 				04E2FBD519392EAF006B5880 /* Images.xcassets in Resources */,
+				A9103E3C193BC934006828C9 /* Ball.png in Resources */,
 				04E2FC0619393151006B5880 /* bounce 2.caf in Resources */,
 				04E2FBD319392EAF006B5880 /* Spaceship.png in Resources */,
-				04E2FC021939313D006B5880 /* ball.png in Resources */,
+				A9103E34193B9278006828C9 /* Background@2x.png in Resources */,
 				04E2FBCB19392EAE006B5880 /* Main.storyboard in Resources */,
-				A99D6AC819393C0300D16374 /* paddle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +331,7 @@
 /* Begin PBXTargetDependency section */
 		04E2FBE019392EAF006B5880 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 04E2FBB119392EAD006B5880 /* Paddles.temp_caseinsensitive_rename */;
+			target = 04E2FBB119392EAD006B5880 /* Paddles.temp_caseinsensitive_rename.temp_caseinsensitive_rename.temp_caseinsensitive_rename */;
 			targetProxy = 04E2FBDF19392EAF006B5880 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -436,9 +440,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "eljueguito mio/Paddles.temp_caseinsensitive_rename-Prefix.pch";
-				INFOPLIST_FILE = "eljueguito mio/Paddles.temp_caseinsensitive_rename-Info.plist";
-				PRODUCT_NAME = Paddles.temp_caseinsensitive_rename;
+				GCC_PREFIX_HEADER = "eljueguito mio/Paddles-Prefix.pch";
+				INFOPLIST_FILE = "eljueguito mio/Paddles-Info.plist";
+				PRODUCT_NAME = Paddles;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -450,9 +454,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "eljueguito mio/Paddles.temp_caseinsensitive_rename-Prefix.pch";
-				INFOPLIST_FILE = "eljueguito mio/Paddles.temp_caseinsensitive_rename-Info.plist";
-				PRODUCT_NAME = Paddles.temp_caseinsensitive_rename;
+				GCC_PREFIX_HEADER = "eljueguito mio/Paddles-Prefix.pch";
+				INFOPLIST_FILE = "eljueguito mio/Paddles-Info.plist";
+				PRODUCT_NAME = Paddles;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -473,8 +477,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "eljueguito mioTests/Paddles.temp_caseinsensitive_renameTests-Info.plist";
-				PRODUCT_NAME = Paddles.temp_caseinsensitive_renameTests;
+				INFOPLIST_FILE = "eljueguito mioTests/Paddles-Info.plist";
+				PRODUCT_NAME = Paddles;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -491,8 +495,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eljueguito mio/eljueguito mio-Prefix.pch";
-				INFOPLIST_FILE = "eljueguito mioTests/Paddles.temp_caseinsensitive_renameTests-Info.plist";
-				PRODUCT_NAME = Paddles.temp_caseinsensitive_renameTests;
+				INFOPLIST_FILE = "eljueguito mioTests/Paddles-Info.plist";
+				PRODUCT_NAME = Paddles;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -510,7 +514,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04E2FBEB19392EAF006B5880 /* Build configuration list for PBXNativeTarget "Paddles.temp_caseinsensitive_rename" */ = {
+		04E2FBEB19392EAF006B5880 /* Build configuration list for PBXNativeTarget "Paddles.temp_caseinsensitive_rename.temp_caseinsensitive_rename.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04E2FBEC19392EAF006B5880 /* Debug */,
@@ -519,7 +523,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04E2FBEE19392EAF006B5880 /* Build configuration list for PBXNativeTarget "Paddles.temp_caseinsensitive_renameTests" */ = {
+		04E2FBEE19392EAF006B5880 /* Build configuration list for PBXNativeTarget "Paddles.temp_caseinsensitive_rename.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04E2FBEF19392EAF006B5880 /* Debug */,
