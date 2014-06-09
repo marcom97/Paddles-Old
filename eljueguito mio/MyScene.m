@@ -8,13 +8,14 @@
 
 #import "MyScene.h"
 #import "GameOver.h"
+
 @interface MyScene ()
 
 @property (nonatomic) SKSpriteNode *paddle;
 @property (nonatomic) SKSpriteNode *paddleup;
 @property (nonatomic) SKSpriteNode *paddleleft;
 @property (nonatomic) SKSpriteNode *paddleright;
-@property SKLabelNode* scoreLabel;
+@property (nonatomic)  SKLabelNode* scoreLabel;
 
 @end
 
@@ -45,7 +46,11 @@ static const uint32_t bordercategory = 4;
         [self addPlayer3:size];
         [self addscore:size];
         
+        start = true;
+        isPlaying = true;
         
+        self.score = 0;
+
     }
     
     return self;
@@ -53,17 +58,22 @@ static const uint32_t bordercategory = 4;
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [ball.physicsBody applyImpulse:CGVectorMake(4, 4)];
+    
+    if (start == true)
+    {
+        [ball.physicsBody applyImpulse:CGVectorMake(4, 4)];
+        start = false;
+
+    }
 
 }
 
-int score1 = 0;
 
 -(void) addscore:(CGSize)size{
     
     _scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Noteworthy-Bold"];
     _scoreLabel.fontSize = 35;
-    _scoreLabel.text = [NSString stringWithFormat:@"%d",score1];
+    _scoreLabel.text = [NSString stringWithFormat:@"%d",self.score];
     _scoreLabel.fontColor = [SKColor whiteColor];
     _scoreLabel.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
     [self addChild:_scoreLabel];
@@ -80,6 +90,16 @@ int score1 = 0;
     if (contact.bodyA.categoryBitMask == paddlecategory) {
         SKAction *playSFX = [SKAction playSoundFileNamed:@"bounce 2.caf" waitForCompletion:NO];
         [self runAction:playSFX];
+        
+        NSString *sparkPath =
+        [[NSBundle mainBundle] pathForResource:@"spark" ofType:@"sks"];
+        
+        SKEmitterNode *burstEmitter =
+        [NSKeyedUnarchiver unarchiveObjectWithFile:sparkPath];
+        
+        burstEmitter.position = CGPointMake(ball.position.x, ball.position.y);
+        
+        [self addChild:burstEmitter];
     }
     
     if (contact.bodyB.categoryBitMask == paddlecategory) {
@@ -88,15 +108,15 @@ int score1 = 0;
     }
     
     if (contact.bodyA.categoryBitMask == paddlecategory) {
-        score1++;
-        _scoreLabel.text = [NSString stringWithFormat:@"%d",score1];
+       self.score++;
+        _scoreLabel.text = [NSString stringWithFormat:@"%d",self.score];
         
         
     }
     
     if (contact.bodyB.categoryBitMask == paddlecategory) {
-        score1++;
-        _scoreLabel.text = [NSString stringWithFormat:@"%d",score1];
+        self.score++;
+        _scoreLabel.text = [NSString stringWithFormat:@"%d",self.score];
         
     }
     
@@ -104,14 +124,14 @@ int score1 = 0;
     
     
     if (contact.bodyA.categoryBitMask == bordercategory) {
-        GameOver *end = [GameOver sceneWithSize:self.size];
-        [self.view presentScene:end transition:[SKTransition doorwayWithDuration:1.0]];
-        score1=0;
+        [self gameover];
+        /*GameOver *end = [[GameOver alloc]  initWithSize:self.size score:self.score];
+        [self.view presentScene:end transition:[SKTransition doorwayWithDuration:1.0]];*/
     }
     if (contact.bodyB.categoryBitMask == bordercategory) {
-        GameOver *end = [GameOver sceneWithSize:self.size];
-        [self.view presentScene:end transition:[SKTransition fadeWithDuration:1.0]];
-        score1 =0;
+        [self gameover];
+        /*GameOver *end = [[GameOver alloc]  initWithSize:self.size score:self.score];
+        [self.view presentScene:end transition:[SKTransition fadeWithDuration:1.0]];*/
     }
     
 }
@@ -140,17 +160,21 @@ int score1 = 0;
 
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    if (isPlaying == true)
+    {
+        
+    
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         CGPoint newPosition = CGPointMake(location.x, 12.5);
         
         
-        if (newPosition.x < self.paddle.size.width / 2) {
-            newPosition.x = self.paddle.size.width / 2;
+        if (newPosition.x < self.paddle.size.width/2-50) {
+            newPosition.x = self.paddle.size.width/2-50;
             
         }
-        if (newPosition.x > self.size.width - (self.paddle.size.width/2)) {
-            newPosition.x = self.size.width - (self.paddle.size.width/2);
+        if (newPosition.x > self.size.width - self.paddle.size.width/2+50) {
+            newPosition.x = self.size.width - self.paddle.size.width/2+50;
             
         }
         
@@ -163,12 +187,12 @@ int score1 = 0;
         
         
         
-        if (newPosition.x < self.paddleup.size.width / 2) {
-            newPosition.x = self.paddleup.size.width / 2;
+        if (newPosition.x < self.paddle.size.width/2-50) {
+            newPosition.x = self.paddle.size.width/2-50;
             
         }
-        if (newPosition.x > self.size.width - (self.paddleup.size.width/2)) {
-            newPosition.x = self.size.width - (self.paddleup.size.width/2);
+        if (newPosition.x > self.size.width - self.paddle.size.width/2+50) {
+            newPosition.x = self.size.width - self.paddle.size.width/2+50;
             
         }
         
@@ -180,12 +204,12 @@ int score1 = 0;
         CGPoint newPosition = CGPointMake(13, location.y);
         
         
-        if (newPosition.y < self.paddleleft.size.height / 2) {
-            newPosition.y = self.paddleleft.size.height / 2;
+        if (newPosition.y < self.paddle.size.width/2-50) {
+            newPosition.y = self.paddle.size.width/2-50;
             
         }
-        if (newPosition.y > self.size.height - (self.paddleleft.size.height/2)) {
-            newPosition.y = self.size.height - (self.paddleleft.size.height/2);
+        if (newPosition.y > self.size.height - self.paddle.size.width/2+50) {
+            newPosition.y = self.size.height - self.paddle.size.width/2+50;
             
         }
         
@@ -196,16 +220,17 @@ int score1 = 0;
         CGPoint location = [touch locationInNode:self];
         CGPoint newPosition = CGPointMake(307, location.y);
         
-        if (newPosition.y < self.paddleright.size.height / 2) {
-            newPosition.y = self.paddleright.size.height / 2;
+        if (newPosition.y < self.paddle.size.width/2-50) {
+            newPosition.y = self.paddle.size.width/2-50;
             
         }
-        if (newPosition.y > self.size.height - (self.paddleright.size.height/2)) {
-            newPosition.y = self.size.height - (self.paddleright.size.height/2);
+        if (newPosition.y > self.size.height - self.paddle.size.width/2+50) {
+            newPosition.y = self.size.height - self.paddle.size.width/2+50;
             
         }
         
         self.paddleright.position =newPosition;
+    }
     }
     
 }
@@ -285,7 +310,14 @@ int score1 = 0;
     [self addChild:self.paddleright];
 }
 
-
+-(void)gameover
+{
+    isPlaying = false;
+    [ball removeFromParent];
+    SKSpriteNode *gameover = [SKSpriteNode spriteNodeWithImageNamed:@"Gameover"];
+    gameover.position = CGPointMake(self.size.width/2, self.size.height/2);
+    [self addChild:gameover];
+}
 
 -(void)update:(CFTimeInterval)currentTime {
     

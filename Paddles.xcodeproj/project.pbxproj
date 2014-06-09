@@ -31,6 +31,9 @@
 		A9103E34193B9278006828C9 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9103E33193B9278006828C9 /* Background@2x.png */; };
 		A9103E3C193BC934006828C9 /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = A9103E3B193BC934006828C9 /* Ball.png */; };
 		A9103E3E193BCD20006828C9 /* Paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = A9103E3D193BCD20006828C9 /* Paddle.png */; };
+		A92B677C193D73B700A48FB1 /* spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = A92B677A193D73B700A48FB1 /* spark.sks */; };
+		A92B677D193D73B700A48FB1 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = A92B677B193D73B700A48FB1 /* spark.png */; };
+		A9881605193FF703003628C1 /* Gameover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9881604193FF703003628C1 /* Gameover@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		A9103E33193B9278006828C9 /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
 		A9103E3B193BC934006828C9 /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball.png; sourceTree = "<group>"; };
 		A9103E3D193BCD20006828C9 /* Paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paddle.png; sourceTree = "<group>"; };
+		A92B677A193D73B700A48FB1 /* spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = spark.sks; sourceTree = "<group>"; };
+		A92B677B193D73B700A48FB1 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		A9881604193FF703003628C1 /* Gameover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gameover@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,8 @@
 				04E2FBF219392F16006B5880 /* Menu.m */,
 				04E2FBCF19392EAF006B5880 /* MyScene.h */,
 				04E2FBD019392EAF006B5880 /* MyScene.m */,
+				A92B677A193D73B700A48FB1 /* spark.sks */,
+				A92B677B193D73B700A48FB1 /* spark.png */,
 				04E2FBF419392F44006B5880 /* GameOver.h */,
 				04E2FBF519392F44006B5880 /* GameOver.m */,
 				04E2FBD219392EAF006B5880 /* Spaceship.png */,
@@ -160,6 +168,7 @@
 		04E2FBBE19392EAE006B5880 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A9881604193FF703003628C1 /* Gameover@2x.png */,
 				A9103E3D193BCD20006828C9 /* Paddle.png */,
 				A9103E33193B9278006828C9 /* Background@2x.png */,
 				A9103E3B193BC934006828C9 /* Ball.png */,
@@ -266,15 +275,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92B677D193D73B700A48FB1 /* spark.png in Resources */,
 				04E2FBC219392EAE006B5880 /* InfoPlist.strings in Resources */,
 				04E2FC0519393151006B5880 /* gameover.caf in Resources */,
 				A9103E3E193BCD20006828C9 /* Paddle.png in Resources */,
 				04E2FBD519392EAF006B5880 /* Images.xcassets in Resources */,
+				A9881605193FF703003628C1 /* Gameover@2x.png in Resources */,
 				A9103E3C193BC934006828C9 /* Ball.png in Resources */,
 				04E2FC0619393151006B5880 /* bounce 2.caf in Resources */,
 				04E2FBD319392EAF006B5880 /* Spaceship.png in Resources */,
 				A9103E34193B9278006828C9 /* Background@2x.png in Resources */,
 				04E2FBCB19392EAE006B5880 /* Main.storyboard in Resources */,
+				A92B677C193D73B700A48FB1 /* spark.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +312,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\n# Modify this to your device's IP address.\nIP=\"192.168.0.14\"\n\n# Verify that the build is for iOS Device and not a Simulator.\nif [ \"$NATIVE_ARCH\" != \"i386\" ]; then\n# Kill any running instances and remove the app folder.\nssh root@$IP \"killall ${TARGETNAME}; rm -rf /Applications/${WRAPPER_NAME}\"\n# Self sign the build.\nldid -S $BUILT_PRODUCTS_DIR/${WRAPPER_NAME}/$TARGETNAME\n# Copy it over.\nscp -r $BUILT_PRODUCTS_DIR/${WRAPPER_NAME} root@$IP:/Applications/\nssh root@$IP \"su -c uicache mobile; killall backboardd\"\n\n# This part just creates create an OS X notification to let you know that the process is done.\n# You can get terminal-notifier from https://github.com/alloy/terminal-notifier.\n# You can remove this line if you want.\nfi";
+			shellScript = "#!/bin/sh\n\n# Modify this to your device's IP address.\nIP=\"192.168.0.16\"\n\n# Verify that the build is for iOS Device and not a Simulator.\nif [ \"$NATIVE_ARCH\" != \"i386\" ]; then\n# Kill any running instances and remove the app folder.\nssh root@$IP \"killall ${TARGETNAME}; rm -rf /Applications/${WRAPPER_NAME}\"\n# Self sign the build.\nldid -S $BUILT_PRODUCTS_DIR/${WRAPPER_NAME}/$TARGETNAME\n# Copy it over.\nscp -r $BUILT_PRODUCTS_DIR/${WRAPPER_NAME} root@$IP:/Applications/\nssh root@$IP \"su -c uicache mobile; killall backboardd\"\n\n# This part just creates create an OS X notification to let you know that the process is done.\n# You can get terminal-notifier from https://github.com/alloy/terminal-notifier.\n# You can remove this line if you want.\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -380,7 +392,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -418,7 +431,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

@@ -11,7 +11,7 @@
 
 @implementation GameOver
 
--(instancetype)initWithSize:(CGSize)size {
+-(instancetype)initWithSize:(CGSize)size score:(int)score {
     if (self = [super initWithSize:size]) {
         
         SKAction *endsound = [SKAction playSoundFileNamed:@"gameover.caf" waitForCompletion:NO];
@@ -37,6 +37,15 @@
         
         
         [self addChild:restart];
+        
+        SKLabelNode *scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura Medium"];
+        scoreLabel.text = [NSString stringWithFormat:@"%d", score];
+        scoreLabel.fontColor = [SKColor whiteColor];
+        scoreLabel.fontSize = 25;
+        scoreLabel.position = CGPointMake(gameover.position.x, gameover.position.y + 50);
+        [self addChild:scoreLabel];
+        
+        
     }
     
     return self;

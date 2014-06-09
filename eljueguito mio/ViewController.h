@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
+#import <GameKit/GameKit.h>
 
 @interface ViewController : UIViewController
+
+-(void)authenticateLocalPlayer;
 
 @end
