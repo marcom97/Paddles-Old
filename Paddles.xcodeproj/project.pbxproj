@@ -14,7 +14,6 @@
 		04E2FBC219392EAE006B5880 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBC019392EAE006B5880 /* InfoPlist.strings */; };
 		04E2FBC419392EAE006B5880 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBC319392EAE006B5880 /* main.m */; };
 		04E2FBC819392EAE006B5880 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBC719392EAE006B5880 /* AppDelegate.m */; };
-		04E2FBCB19392EAE006B5880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBC919392EAE006B5880 /* Main.storyboard */; };
 		04E2FBCE19392EAF006B5880 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBCD19392EAF006B5880 /* ViewController.m */; };
 		04E2FBD119392EAF006B5880 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBD019392EAF006B5880 /* MyScene.m */; };
 		04E2FBD319392EAF006B5880 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBD219392EAF006B5880 /* Spaceship.png */; };
@@ -33,12 +32,13 @@
 		A9103E3E193BCD20006828C9 /* Paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = A9103E3D193BCD20006828C9 /* Paddle.png */; };
 		A92B677C193D73B700A48FB1 /* spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = A92B677A193D73B700A48FB1 /* spark.sks */; };
 		A92B677D193D73B700A48FB1 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = A92B677B193D73B700A48FB1 /* spark.png */; };
-		A9D6FE2D19529790002AFD87 /* Title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D6FE2C19529790002AFD87 /* Title@2x.png */; };
+		A94EE7E7197F9CA80071DD17 /* Title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A94EE7E6197F9CA80071DD17 /* Title@2x.png */; };
+		A94EE7E9197F9FD50071DD17 /* Gameover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A94EE7E8197F9FD50071DD17 /* Gameover@2x.png */; };
+		A94EE7ED197FA3630071DD17 /* Paddles-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A94EE7EC197FA3630071DD17 /* Paddles-Info.plist */; };
+		A94EE7EF197FA5740071DD17 /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A94EE7EE197FA5740071DD17 /* Play@2x.png */; };
 		A9E6558E1947A29500CEB043 /* Retry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9E6558C1947A29500CEB043 /* Retry@2x.png */; };
 		A9E6559119482CF400CEB043 /* ka1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9E6559019482BA800CEB043 /* ka1.ttf */; };
-		A9EA72F219467C6300ED03EF /* Gameover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9EA72F119467C6300ED03EF /* Gameover@2x.png */; };
 		A9F857C41953EE8D000D50D4 /* Leaderboards@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F857C31953EE8D000D50D4 /* Leaderboards@2x.png */; };
-		A9F857C61953EE94000D50D4 /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F857C51953EE94000D50D4 /* Play@2x.png */; };
 		A9F857CA1953F800000D50D4 /* Home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F857C91953F800000D50D4 /* Home@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -58,10 +58,8 @@
 		04E2FBB719392EAE006B5880 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		04E2FBB919392EAE006B5880 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		04E2FBBB19392EAE006B5880 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		04E2FBBF19392EAE006B5880 /* Paddles-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Paddles-Info.plist"; sourceTree = "<group>"; };
 		04E2FBC119392EAE006B5880 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04E2FBC319392EAE006B5880 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		04E2FBC519392EAE006B5880 /* Paddles-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Paddles-Prefix.pch"; sourceTree = "<group>"; };
 		04E2FBC619392EAE006B5880 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04E2FBC719392EAE006B5880 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		04E2FBCA19392EAE006B5880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,12 +85,14 @@
 		A9103E3D193BCD20006828C9 /* Paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paddle.png; sourceTree = "<group>"; };
 		A92B677A193D73B700A48FB1 /* spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = spark.sks; sourceTree = "<group>"; };
 		A92B677B193D73B700A48FB1 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		A9D6FE2C19529790002AFD87 /* Title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Title@2x.png"; sourceTree = "<group>"; };
+		A94EE7E6197F9CA80071DD17 /* Title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Title@2x.png"; sourceTree = "<group>"; };
+		A94EE7E8197F9FD50071DD17 /* Gameover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gameover@2x.png"; sourceTree = "<group>"; };
+		A94EE7EB197FA32F0071DD17 /* Paddles-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Paddles-Prefix.pch"; sourceTree = "<group>"; };
+		A94EE7EC197FA3630071DD17 /* Paddles-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Paddles-Info.plist"; sourceTree = "<group>"; };
+		A94EE7EE197FA5740071DD17 /* Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play@2x.png"; sourceTree = "<group>"; };
 		A9E6558C1947A29500CEB043 /* Retry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Retry@2x.png"; sourceTree = "<group>"; };
 		A9E6559019482BA800CEB043 /* ka1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ka1.ttf; sourceTree = "<group>"; };
-		A9EA72F119467C6300ED03EF /* Gameover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gameover@2x.png"; sourceTree = "<group>"; };
 		A9F857C31953EE8D000D50D4 /* Leaderboards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leaderboards@2x.png"; sourceTree = "<group>"; };
-		A9F857C51953EE94000D50D4 /* Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play@2x.png"; sourceTree = "<group>"; };
 		A9F857C91953F800000D50D4 /* Home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,16 +172,16 @@
 				04E2FBF519392F44006B5880 /* GameOver.m */,
 				04E2FBD219392EAF006B5880 /* Spaceship.png */,
 				04E2FBD419392EAF006B5880 /* Images.xcassets */,
-				A9F857C51953EE94000D50D4 /* Play@2x.png */,
 				A9F857C31953EE8D000D50D4 /* Leaderboards@2x.png */,
 				A9E6559019482BA800CEB043 /* ka1.ttf */,
+				A94EE7EE197FA5740071DD17 /* Play@2x.png */,
 				A9E6558C1947A29500CEB043 /* Retry@2x.png */,
+				A94EE7E8197F9FD50071DD17 /* Gameover@2x.png */,
 				A9F857C91953F800000D50D4 /* Home@2x.png */,
-				A9EA72F119467C6300ED03EF /* Gameover@2x.png */,
 				A9103E3D193BCD20006828C9 /* Paddle.png */,
 				A9103E33193B9278006828C9 /* Background@2x.png */,
 				A9103E3B193BC934006828C9 /* Ball.png */,
-				A9D6FE2C19529790002AFD87 /* Title@2x.png */,
+				A94EE7E6197F9CA80071DD17 /* Title@2x.png */,
 				04E2FBBE19392EAE006B5880 /* Supporting Files */,
 			);
 			name = Paddles;
@@ -191,10 +191,10 @@
 		04E2FBBE19392EAE006B5880 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				04E2FBBF19392EAE006B5880 /* Paddles-Info.plist */,
+				A94EE7EC197FA3630071DD17 /* Paddles-Info.plist */,
 				04E2FBC019392EAE006B5880 /* InfoPlist.strings */,
 				04E2FBC319392EAE006B5880 /* main.m */,
-				04E2FBC519392EAE006B5880 /* Paddles-Prefix.pch */,
+				A94EE7EB197FA32F0071DD17 /* Paddles-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -299,18 +299,18 @@
 				A92B677D193D73B700A48FB1 /* spark.png in Resources */,
 				04E2FBC219392EAE006B5880 /* InfoPlist.strings in Resources */,
 				A9E6558E1947A29500CEB043 /* Retry@2x.png in Resources */,
+				A94EE7EF197FA5740071DD17 /* Play@2x.png in Resources */,
 				A9F857CA1953F800000D50D4 /* Home@2x.png in Resources */,
 				04E2FC0519393151006B5880 /* gameover.caf in Resources */,
+				A94EE7E9197F9FD50071DD17 /* Gameover@2x.png in Resources */,
 				A9103E3E193BCD20006828C9 /* Paddle.png in Resources */,
 				04E2FBD519392EAF006B5880 /* Images.xcassets in Resources */,
-				A9EA72F219467C6300ED03EF /* Gameover@2x.png in Resources */,
 				A9103E3C193BC934006828C9 /* Ball.png in Resources */,
 				04E2FC0619393151006B5880 /* bounce 2.caf in Resources */,
+				A94EE7E7197F9CA80071DD17 /* Title@2x.png in Resources */,
+				A94EE7ED197FA3630071DD17 /* Paddles-Info.plist in Resources */,
 				04E2FBD319392EAF006B5880 /* Spaceship.png in Resources */,
 				A9103E34193B9278006828C9 /* Background@2x.png in Resources */,
-				A9D6FE2D19529790002AFD87 /* Title@2x.png in Resources */,
-				04E2FBCB19392EAE006B5880 /* Main.storyboard in Resources */,
-				A9F857C61953EE94000D50D4 /* Play@2x.png in Resources */,
 				A92B677C193D73B700A48FB1 /* spark.sks in Resources */,
 				A9F857C41953EE8D000D50D4 /* Leaderboards@2x.png in Resources */,
 			);
@@ -338,7 +338,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\n# Modify this to your device's IP address.\nIP=\"192.168.0.14\"\n\n# Verify that the build is for iOS Device and not a Simulator.\nif [ \"$NATIVE_ARCH\" != \"i386\" ]; then\n# Kill any running instances and remove the app folder.\nssh root@$IP \"killall ${TARGETNAME}; rm -rf /Applications/${WRAPPER_NAME}\"\n# Self sign the build.\nldid -S $BUILT_PRODUCTS_DIR/${WRAPPER_NAME}/$TARGETNAME\n# Copy it over.\nscp -r $BUILT_PRODUCTS_DIR/${WRAPPER_NAME} root@$IP:/Applications/\nssh root@$IP \"su -c uicache mobile; killall backboardd\"\n\n# This part just creates create an OS X notification to let you know that the process is done.\n# You can get terminal-notifier from https://github.com/alloy/terminal-notifier.\n# You can remove this line if you want.\nfi";
+			shellScript = "#!/bin/sh\n\n# Modify this to your device's IP address.\nIP=\"192.168.0.13\"\n\n# Verify that the build is for iOS Device and not a Simulator.\nif [ \"$NATIVE_ARCH\" != \"i386\" ]; then\n# Kill any running instances and remove the app folder.\nssh root@$IP \"killall ${TARGETNAME}; rm -rf /Applications/${WRAPPER_NAME}\"\n# Self sign the build.\nldid -S $BUILT_PRODUCTS_DIR/${WRAPPER_NAME}/$TARGETNAME\n# Copy it over.\nscp -r $BUILT_PRODUCTS_DIR/${WRAPPER_NAME} root@$IP:/Applications/\nssh root@$IP \"su -c uicache mobile; killall backboardd\"\n\n# This part just creates create an OS X notification to let you know that the process is done.\n# You can get terminal-notifier from https://github.com/alloy/terminal-notifier.\n# You can remove this line if you want.\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
