@@ -342,6 +342,7 @@ static const uint32_t bordercategory = 4;
 
 -(void)gameover
 {
+    location = CGPointMake(0, 0);
     isPlaying = false;
     [ball removeFromParent];
     SKSpriteNode *gameover = [SKSpriteNode spriteNodeWithImageNamed:@"Gameover"];
