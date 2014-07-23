@@ -117,7 +117,7 @@ static const uint32_t bordercategory = 4;
 
 - (void)addBall {
     
-    ball = [SKSpriteNode spriteNodeWithImageNamed:@"ball"];
+    ball = [SKSpriteNode spriteNodeWithImageNamed:@"Ball"];
     
     ball.zPosition = 4;
     
@@ -167,7 +167,7 @@ static const uint32_t bordercategory = 4;
 -(void) addPlayer  {
     
     
-    self.paddle = [SKSpriteNode spriteNodeWithImageNamed:@"paddle"];
+    self.paddle = [SKSpriteNode spriteNodeWithImageNamed:@"Paddle"];
     
     self.paddle.position = CGPointMake(self.size.width/2,12.5);
     
@@ -183,7 +183,7 @@ static const uint32_t bordercategory = 4;
 -(void) addPlayer2:(CGSize)size  {
     
     
-    self.paddleup = [SKSpriteNode spriteNodeWithImageNamed:@"paddle"];
+    self.paddleup = [SKSpriteNode spriteNodeWithImageNamed:@"Paddle"];
     
     self.paddleup.position = CGPointMake(size.width/2,self.size.height-12.5);
     
@@ -201,7 +201,7 @@ static const uint32_t bordercategory = 4;
 -(void) addPlayer3:(CGSize)size  {
     
     
-    self.paddleleft = [SKSpriteNode spriteNodeWithImageNamed:@"paddle"];
+    self.paddleleft = [SKSpriteNode spriteNodeWithImageNamed:@"Paddle"];
     
     self.paddleleft.position = CGPointMake(12.5,size.height/2);
     
@@ -220,7 +220,9 @@ static const uint32_t bordercategory = 4;
 -(void) addPlayer4:(CGSize)size  {
     
     
-    self.paddleright = [SKSpriteNode spriteNodeWithImageNamed:@"paddle"];
+    self.paddleright = [SKSpriteNode spriteNodeWithImageNamed:@"Paddle"];
+    
+    self.paddleright.size = CGSizeMake(self.paddleright.size.width * 2, self.paddleright.size.height * 2);
     
     self.paddleright.position = CGPointMake(307.5,size.height/2);
     

@@ -61,11 +61,9 @@ static const uint32_t bordercategory = 4;
 {
     for (UITouch *touch in touches)
     {
-        count++;
-        if (count > 1)
-        {
+        
             location = [touch locationInNode:self];
-        }
+        
     }
     
     if (start == true)
@@ -104,7 +102,7 @@ static const uint32_t bordercategory = 4;
 
 -(void) addscore:(CGSize)size{
     
-    _scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"KarmaticArcade"];
+    _scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Arial"];
     _scoreLabel.fontSize = 35;
     _scoreLabel.text = [NSString stringWithFormat:@"%d",self.score];
     _scoreLabel.fontColor = [UIColor colorWithRed:1.00 green:0.00 blue:0.00 alpha:1.0];
@@ -168,7 +166,7 @@ static const uint32_t bordercategory = 4;
 
 - (void) addBall {
     
-    ball = [SKSpriteNode spriteNodeWithImageNamed:@"ball"];
+    ball = [SKSpriteNode spriteNodeWithImageNamed:@"Ball"];
     
     
     ball.position = CGPointMake(self.size.width/2,self.size.height/2);;
@@ -270,7 +268,7 @@ static const uint32_t bordercategory = 4;
 -(void) addPlayer  {
     
     
-    self.paddle = [SKSpriteNode spriteNodeWithImageNamed:@"paddle"];
+    self.paddle = [SKSpriteNode spriteNodeWithImageNamed:@"Paddle"];
     
     self.paddle.position = CGPointMake(self.size.width/2,12.5);
     
@@ -286,7 +284,7 @@ static const uint32_t bordercategory = 4;
 -(void) addPlayer2:(CGSize)size  {
     
     
-    self.paddleup = [SKSpriteNode spriteNodeWithImageNamed:@"paddle"];
+    self.paddleup = [SKSpriteNode spriteNodeWithImageNamed:@"Paddle"];
     
     self.paddleup.position = CGPointMake(size.width/2,self.size.height-12.5);
     
@@ -304,7 +302,7 @@ static const uint32_t bordercategory = 4;
 -(void) addPlayer3:(CGSize)size  {
     
     
-    self.paddleleft = [SKSpriteNode spriteNodeWithImageNamed:@"paddle"];
+    self.paddleleft = [SKSpriteNode spriteNodeWithImageNamed:@"Paddle"];
     
     self.paddleleft.position = CGPointMake(12.5,size.height/2);
     
@@ -323,7 +321,7 @@ static const uint32_t bordercategory = 4;
 -(void) addPlayer4:(CGSize)size  {
     
     
-    self.paddleright = [SKSpriteNode spriteNodeWithImageNamed:@"paddle"];
+    self.paddleright = [SKSpriteNode spriteNodeWithImageNamed:@"Paddle"];
     
     self.paddleright.position = CGPointMake(307.5,size.height/2);
 
