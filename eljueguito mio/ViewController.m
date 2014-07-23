@@ -13,7 +13,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+       [super viewDidLoad];
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;

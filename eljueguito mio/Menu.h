@@ -8,6 +8,18 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface menu : SKScene
+@interface menu : SKScene <SKPhysicsContactDelegate>
+{
+    SKSpriteNode *ball;
+    SKSpriteNode *play;
+    SKSpriteNode *leaderboards;
+    CGPoint location;
+    CGPoint endLocation;
+}
+
+@property (nonatomic) SKSpriteNode *paddle;
+@property (nonatomic) SKSpriteNode *paddleup;
+@property (nonatomic) SKSpriteNode *paddleleft;
+@property (nonatomic) SKSpriteNode *paddleright;
 
 @end

@@ -12,8 +12,12 @@
 @interface MyScene : SKScene <SKPhysicsContactDelegate>
 {
     SKSpriteNode *ball;
+    SKSpriteNode *home;
+    SKSpriteNode *retry;
+    int count;
     BOOL start;
     BOOL isPlaying;
+    CGPoint location;
 }
 @property (nonatomic) int score;
 

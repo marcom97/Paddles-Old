@@ -8,6 +8,7 @@
 
 #import "MyScene.h"
 #import "GameOver.h"
+#import "Menu.h"
 
 @interface MyScene ()
 
@@ -58,10 +59,42 @@ static const uint32_t bordercategory = 4;
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    for (UITouch *touch in touches)
+    {
+        count++;
+        if (count > 1)
+        {
+            location = [touch locationInNode:self];
+        }
+    }
     
     if (start == true)
     {
-        [ball.physicsBody applyImpulse:CGVectorMake(4, 4)];
+        int ballForce = arc4random()%4;
+        CGVector force;
+        
+        switch (ballForce) {
+            case 0:
+                force = CGVectorMake(-4, 4);
+                break;
+                
+            case 1:
+                force = CGVectorMake(-4, -4);
+                break;
+                
+            case 2:
+                force = CGVectorMake(4, -4);
+                break;
+                
+            case 3:
+                force = CGVectorMake(4, 4);
+                break;
+                
+            default:
+                break;
+        }
+        
+        [ball.physicsBody applyImpulse:force];
         start = false;
 
     }
@@ -71,10 +104,10 @@ static const uint32_t bordercategory = 4;
 
 -(void) addscore:(CGSize)size{
     
-    _scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Noteworthy-Bold"];
+    _scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"KarmaticArcade"];
     _scoreLabel.fontSize = 35;
     _scoreLabel.text = [NSString stringWithFormat:@"%d",self.score];
-    _scoreLabel.fontColor = [SKColor whiteColor];
+    _scoreLabel.fontColor = [UIColor colorWithRed:1.00 green:0.00 blue:0.00 alpha:1.0];
     _scoreLabel.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
     [self addChild:_scoreLabel];
     
@@ -125,13 +158,10 @@ static const uint32_t bordercategory = 4;
     
     if (contact.bodyA.categoryBitMask == bordercategory) {
         [self gameover];
-        /*GameOver *end = [[GameOver alloc]  initWithSize:self.size score:self.score];
-        [self.view presentScene:end transition:[SKTransition doorwayWithDuration:1.0]];*/
+
     }
     if (contact.bodyB.categoryBitMask == bordercategory) {
-        [self gameover];
-        /*GameOver *end = [[GameOver alloc]  initWithSize:self.size score:self.score];
-        [self.view presentScene:end transition:[SKTransition fadeWithDuration:1.0]];*/
+
     }
     
 }
@@ -145,7 +175,7 @@ static const uint32_t bordercategory = 4;
     
     
     
-    
+    ball.physicsBody.dynamic = true;
     ball.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:27/2];
     ball.physicsBody.friction = 0;
     ball.physicsBody.linearDamping = 0;
@@ -317,10 +347,31 @@ static const uint32_t bordercategory = 4;
     SKSpriteNode *gameover = [SKSpriteNode spriteNodeWithImageNamed:@"Gameover"];
     gameover.position = CGPointMake(self.size.width/2, self.size.height/2);
     [self addChild:gameover];
+    
+    home = [SKSpriteNode spriteNodeWithImageNamed:@"Home"];
+    home.position = CGPointMake(self.size.width - self.size.width/3, self.size.height/4);
+    [self addChild:home];
+    
+    retry = [SKSpriteNode spriteNodeWithImageNamed:@"Retry"];
+    retry.position = CGPointMake(self.size.width/3, self.size.height/4);
+    [self addChild:retry];
+    
+    
 }
 
--(void)update:(CFTimeInterval)currentTime {
+-(void)update:(CFTimeInterval)currentTime
+{
+    if ([home containsPoint:location])
+    {
+        SKScene *scene = [menu sceneWithSize:self.size];
+        [self.view presentScene:scene];
+    }
     
+    if ([retry containsPoint:location])
+    {
+        SKScene *scene = [MyScene sceneWithSize:self.size];
+        [self.view presentScene:scene];
+    }
 }
 
 
