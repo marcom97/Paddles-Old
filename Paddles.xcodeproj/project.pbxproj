@@ -27,18 +27,24 @@
 		04E2FBF619392F44006B5880 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FBF519392F44006B5880 /* GameOver.m */; };
 		04E2FC0519393151006B5880 /* gameover.caf in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FC0319393151006B5880 /* gameover.caf */; };
 		04E2FC0619393151006B5880 /* bounce 2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FC0419393151006B5880 /* bounce 2.caf */; };
-		A9103E34193B9278006828C9 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9103E33193B9278006828C9 /* Background@2x.png */; };
-		A92B677C193D73B700A48FB1 /* spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = A92B677A193D73B700A48FB1 /* spark.sks */; };
-		A92B677D193D73B700A48FB1 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = A92B677B193D73B700A48FB1 /* spark.png */; };
-		A9395AF31980606000FEFB31 /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = A9395AF11980606000FEFB31 /* Ball.png */; };
-		A9395AF41980606000FEFB31 /* Paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = A9395AF21980606000FEFB31 /* Paddle.png */; };
-		A94EE7E7197F9CA80071DD17 /* Title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A94EE7E6197F9CA80071DD17 /* Title@2x.png */; };
+		49AD5F960D542F2F8EC69D35 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D42853814667E0E66F6CA9C /* libPods.a */; };
 		A94EE7E9197F9FD50071DD17 /* Gameover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A94EE7E8197F9FD50071DD17 /* Gameover@2x.png */; };
-		A94EE7EF197FA5740071DD17 /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A94EE7EE197FA5740071DD17 /* Play@2x.png */; };
+		A9563FE819DA40E4009DCA46 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9563FE719DA40E4009DCA46 /* GameKit.framework */; };
+		A98E954519BD22CC00E6CADC /* LaunchImage@2x-5.png in Resources */ = {isa = PBXBuildFile; fileRef = A98E954419BD22CC00E6CADC /* LaunchImage@2x-5.png */; };
+		A98E954719BD22D100E6CADC /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A98E954619BD22D100E6CADC /* LaunchImage@2x.png */; };
+		A98E954919BD244800E6CADC /* Paddles Icon 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A98E954819BD244800E6CADC /* Paddles Icon 2@2x.png */; };
+		A99BCB2819DE8718005FC6D4 /* SKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A99BCB2719DE8718005FC6D4 /* SKButton.m */; };
 		A9A1E46D19806C7F00D545B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E2FBC919392EAE006B5880 /* Main.storyboard */; };
+		A9AFED1B19DB51F7006388BC /* GCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AFED1A19DB51F7006388BC /* GCHelper.m */; };
+		A9BFA9DB19BD33FB005D7429 /* Untitled.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A9BFA9DA19BD33FB005D7429 /* Untitled.mp3 */; };
+		A9D67EBC19E618C200133E16 /* Leaderboards@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D67EBB19E618C200133E16 /* Leaderboards@2x.png */; };
+		A9D67EBE19E618C600133E16 /* LeaderboardsSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D67EBD19E618C600133E16 /* LeaderboardsSelected.png */; };
+		A9D67EC919E61D4200133E16 /* PlaySelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D67EC719E61D4200133E16 /* PlaySelected@2x.png */; };
+		A9D67ECA19E61D4200133E16 /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D67EC819E61D4200133E16 /* Play@2x.png */; };
+		A9D722A819E9CC46008BBEB4 /* CircularScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D722A719E9CC46008BBEB4 /* CircularScene.m */; };
 		A9E6558E1947A29500CEB043 /* Retry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9E6558C1947A29500CEB043 /* Retry@2x.png */; };
-		A9F857C41953EE8D000D50D4 /* Leaderboards@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F857C31953EE8D000D50D4 /* Leaderboards@2x.png */; };
 		A9F857CA1953F800000D50D4 /* Home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F857C91953F800000D50D4 /* Home@2x.png */; };
+		A9FC511A1AEA0A8D00E74127 /* Title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FC51191AEA0A8D00E74127 /* Title@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,19 +85,31 @@
 		04E2FBF519392F44006B5880 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
 		04E2FC0319393151006B5880 /* gameover.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameover.caf; sourceTree = "<group>"; };
 		04E2FC0419393151006B5880 /* bounce 2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bounce 2.caf"; sourceTree = "<group>"; };
-		A9103E33193B9278006828C9 /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
-		A92B677A193D73B700A48FB1 /* spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = spark.sks; sourceTree = "<group>"; };
-		A92B677B193D73B700A48FB1 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		A9395AF11980606000FEFB31 /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball.png; sourceTree = "<group>"; };
-		A9395AF21980606000FEFB31 /* Paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paddle.png; sourceTree = "<group>"; };
-		A94EE7E6197F9CA80071DD17 /* Title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Title@2x.png"; sourceTree = "<group>"; };
+		1D42853814667E0E66F6CA9C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9813B2EE82113FA6AD12EA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A94EE7E8197F9FD50071DD17 /* Gameover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gameover@2x.png"; sourceTree = "<group>"; };
 		A94EE7EB197FA32F0071DD17 /* Paddles-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Paddles-Prefix.pch"; sourceTree = "<group>"; };
 		A94EE7EC197FA3630071DD17 /* Paddles-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Paddles-Info.plist"; sourceTree = "<group>"; };
-		A94EE7EE197FA5740071DD17 /* Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play@2x.png"; sourceTree = "<group>"; };
+		A9563FE719DA40E4009DCA46 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		A98E954419BD22CC00E6CADC /* LaunchImage@2x-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x-5.png"; sourceTree = "<group>"; };
+		A98E954619BD22D100E6CADC /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		A98E954819BD244800E6CADC /* Paddles Icon 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Paddles Icon 2@2x.png"; sourceTree = "<group>"; };
+		A99BCB2619DE8718005FC6D4 /* SKButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKButton.h; sourceTree = "<group>"; };
+		A99BCB2719DE8718005FC6D4 /* SKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKButton.m; sourceTree = "<group>"; };
+		A9AFED1919DB51F7006388BC /* GCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCHelper.h; sourceTree = "<group>"; };
+		A9AFED1A19DB51F7006388BC /* GCHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCHelper.m; sourceTree = "<group>"; };
+		A9B9639D19CF323A00FB6683 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		A9BFA9DA19BD33FB005D7429 /* Untitled.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Untitled.mp3; sourceTree = "<group>"; };
+		A9D67EBB19E618C200133E16 /* Leaderboards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leaderboards@2x.png"; sourceTree = "<group>"; };
+		A9D67EBD19E618C600133E16 /* LeaderboardsSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeaderboardsSelected.png; sourceTree = "<group>"; };
+		A9D67EC719E61D4200133E16 /* PlaySelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlaySelected@2x.png"; sourceTree = "<group>"; };
+		A9D67EC819E61D4200133E16 /* Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play@2x.png"; sourceTree = "<group>"; };
+		A9D722A619E9CC46008BBEB4 /* CircularScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularScene.h; sourceTree = "<group>"; };
+		A9D722A719E9CC46008BBEB4 /* CircularScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularScene.m; sourceTree = "<group>"; };
 		A9E6558C1947A29500CEB043 /* Retry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Retry@2x.png"; sourceTree = "<group>"; };
-		A9F857C31953EE8D000D50D4 /* Leaderboards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leaderboards@2x.png"; sourceTree = "<group>"; };
 		A9F857C91953F800000D50D4 /* Home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home@2x.png"; sourceTree = "<group>"; };
+		A9FC51191AEA0A8D00E74127 /* Title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Title@2x.png"; sourceTree = "<group>"; };
+		F73EBB131D224C0D8F032B74 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +121,8 @@
 				04E2FBBA19392EAE006B5880 /* UIKit.framework in Frameworks */,
 				04E2FBBC19392EAE006B5880 /* SpriteKit.framework in Frameworks */,
 				04E2FBB619392EAE006B5880 /* Foundation.framework in Frameworks */,
+				A9563FE819DA40E4009DCA46 /* GameKit.framework in Frameworks */,
+				49AD5F960D542F2F8EC69D35 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +146,7 @@
 				04E2FBE119392EAF006B5880 /* PaddlesTests */,
 				04E2FBB419392EAE006B5880 /* Frameworks */,
 				04E2FBB319392EAE006B5880 /* Products */,
+				3D5825780AC722FCC3538D88 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,11 +162,13 @@
 		04E2FBB419392EAE006B5880 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9563FE719DA40E4009DCA46 /* GameKit.framework */,
 				04E2FBB519392EAE006B5880 /* Foundation.framework */,
 				04E2FBB719392EAE006B5880 /* CoreGraphics.framework */,
 				04E2FBB919392EAE006B5880 /* UIKit.framework */,
 				04E2FBBB19392EAE006B5880 /* SpriteKit.framework */,
 				04E2FBDB19392EAF006B5880 /* XCTest.framework */,
+				1D42853814667E0E66F6CA9C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +178,7 @@
 			children = (
 				04E2FC0319393151006B5880 /* gameover.caf */,
 				04E2FC0419393151006B5880 /* bounce 2.caf */,
+				A9BFA9DA19BD33FB005D7429 /* Untitled.mp3 */,
 				04E2FBC619392EAE006B5880 /* AppDelegate.h */,
 				04E2FBC719392EAE006B5880 /* AppDelegate.m */,
 				04E2FBC919392EAE006B5880 /* Main.storyboard */,
@@ -164,21 +188,25 @@
 				04E2FBF219392F16006B5880 /* Menu.m */,
 				04E2FBCF19392EAF006B5880 /* MyScene.h */,
 				04E2FBD019392EAF006B5880 /* MyScene.m */,
-				A92B677A193D73B700A48FB1 /* spark.sks */,
-				A92B677B193D73B700A48FB1 /* spark.png */,
+				A9D722A619E9CC46008BBEB4 /* CircularScene.h */,
+				A9D722A719E9CC46008BBEB4 /* CircularScene.m */,
 				04E2FBF419392F44006B5880 /* GameOver.h */,
 				04E2FBF519392F44006B5880 /* GameOver.m */,
+				A9AFED1919DB51F7006388BC /* GCHelper.h */,
+				A9AFED1A19DB51F7006388BC /* GCHelper.m */,
+				A99BCB2619DE8718005FC6D4 /* SKButton.h */,
+				A99BCB2719DE8718005FC6D4 /* SKButton.m */,
 				04E2FBD219392EAF006B5880 /* Spaceship.png */,
 				04E2FBD419392EAF006B5880 /* Images.xcassets */,
-				A9F857C31953EE8D000D50D4 /* Leaderboards@2x.png */,
-				A94EE7EE197FA5740071DD17 /* Play@2x.png */,
+				A9D67EBB19E618C200133E16 /* Leaderboards@2x.png */,
+				A9D67EBD19E618C600133E16 /* LeaderboardsSelected.png */,
+				A9D67EC819E61D4200133E16 /* Play@2x.png */,
+				A9D67EC719E61D4200133E16 /* PlaySelected@2x.png */,
 				A9E6558C1947A29500CEB043 /* Retry@2x.png */,
-				A9395AF11980606000FEFB31 /* Ball.png */,
-				A9395AF21980606000FEFB31 /* Paddle.png */,
 				A94EE7E8197F9FD50071DD17 /* Gameover@2x.png */,
 				A9F857C91953F800000D50D4 /* Home@2x.png */,
-				A9103E33193B9278006828C9 /* Background@2x.png */,
-				A94EE7E6197F9CA80071DD17 /* Title@2x.png */,
+				A9FC51191AEA0A8D00E74127 /* Title@2x.png */,
+				A9B9639D19CF323A00FB6683 /* MyPlayground.playground */,
 				04E2FBBE19392EAE006B5880 /* Supporting Files */,
 			);
 			name = Paddles;
@@ -188,6 +216,9 @@
 		04E2FBBE19392EAE006B5880 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A98E954619BD22D100E6CADC /* LaunchImage@2x.png */,
+				A98E954419BD22CC00E6CADC /* LaunchImage@2x-5.png */,
+				A98E954819BD244800E6CADC /* Paddles Icon 2@2x.png */,
 				A94EE7EC197FA3630071DD17 /* Paddles-Info.plist */,
 				04E2FBC019392EAE006B5880 /* InfoPlist.strings */,
 				04E2FBC319392EAE006B5880 /* main.m */,
@@ -215,6 +246,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3D5825780AC722FCC3538D88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B9813B2EE82113FA6AD12EA /* Pods.debug.xcconfig */,
+				F73EBB131D224C0D8F032B74 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,10 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04E2FBEB19392EAF006B5880 /* Build configuration list for PBXNativeTarget "Paddles.temp_caseinsensitive_rename.temp_caseinsensitive_rename.temp_caseinsensitive_rename" */;
 			buildPhases = (
+				E669AC7D6D9DCC26035F1547 /* Check Pods Manifest.lock */,
 				04E2FBAE19392EAD006B5880 /* Sources */,
 				04E2FBAF19392EAD006B5880 /* Frameworks */,
 				04E2FBB019392EAD006B5880 /* Resources */,
-				A99D6AC91939766A00D16374 /* ShellScript */,
+				33949E087E34C5710405038A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,6 +304,14 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "BlueStars Studios";
 				TargetAttributes = {
+					04E2FBB119392EAD006B5880 = {
+						DevelopmentTeam = CBKB3CSGF9;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
+					};
 					04E2FBD919392EAF006B5880 = {
 						TestTargetID = 04E2FBB119392EAD006B5880;
 					};
@@ -293,22 +342,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9A1E46D19806C7F00D545B5 /* Main.storyboard in Resources */,
-				A92B677D193D73B700A48FB1 /* spark.png in Resources */,
+				A98E954519BD22CC00E6CADC /* LaunchImage@2x-5.png in Resources */,
+				A98E954719BD22D100E6CADC /* LaunchImage@2x.png in Resources */,
 				04E2FBC219392EAE006B5880 /* InfoPlist.strings in Resources */,
+				A9FC511A1AEA0A8D00E74127 /* Title@2x.png in Resources */,
 				A9E6558E1947A29500CEB043 /* Retry@2x.png in Resources */,
-				A94EE7EF197FA5740071DD17 /* Play@2x.png in Resources */,
-				A9395AF41980606000FEFB31 /* Paddle.png in Resources */,
+				A9BFA9DB19BD33FB005D7429 /* Untitled.mp3 in Resources */,
 				A9F857CA1953F800000D50D4 /* Home@2x.png in Resources */,
 				04E2FC0519393151006B5880 /* gameover.caf in Resources */,
 				A94EE7E9197F9FD50071DD17 /* Gameover@2x.png in Resources */,
 				04E2FBD519392EAF006B5880 /* Images.xcassets in Resources */,
 				04E2FC0619393151006B5880 /* bounce 2.caf in Resources */,
-				A94EE7E7197F9CA80071DD17 /* Title@2x.png in Resources */,
 				04E2FBD319392EAF006B5880 /* Spaceship.png in Resources */,
-				A9103E34193B9278006828C9 /* Background@2x.png in Resources */,
-				A92B677C193D73B700A48FB1 /* spark.sks in Resources */,
-				A9395AF31980606000FEFB31 /* Ball.png in Resources */,
-				A9F857C41953EE8D000D50D4 /* Leaderboards@2x.png in Resources */,
+				A9D67EBC19E618C200133E16 /* Leaderboards@2x.png in Resources */,
+				A9D67EC919E61D4200133E16 /* PlaySelected@2x.png in Resources */,
+				A9D67ECA19E61D4200133E16 /* Play@2x.png in Resources */,
+				A9D67EBE19E618C600133E16 /* LeaderboardsSelected.png in Resources */,
+				A98E954919BD244800E6CADC /* Paddles Icon 2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,18 +373,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A99D6AC91939766A00D16374 /* ShellScript */ = {
+		33949E087E34C5710405038A /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\n# Modify this to your device's IP address.\nIP=\"192.168.0.13\"\n\n# Verify that the build is for iOS Device and not a Simulator.\nif [ \"$NATIVE_ARCH\" != \"i386\" ]; then\n# Kill any running instances and remove the app folder.\nssh root@$IP \"killall ${TARGETNAME}; rm -rf /Applications/${WRAPPER_NAME}\"\n# Self sign the build.\nldid -S $BUILT_PRODUCTS_DIR/${WRAPPER_NAME}/$TARGETNAME\n# Copy it over.\nscp -r $BUILT_PRODUCTS_DIR/${WRAPPER_NAME} root@$IP:/Applications/\nssh root@$IP \"su -c uicache mobile; killall backboardd\"\n\n# This part just creates create an OS X notification to let you know that the process is done.\n# You can get terminal-notifier from https://github.com/alloy/terminal-notifier.\n# You can remove this line if you want.\nfi";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E669AC7D6D9DCC26035F1547 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -344,11 +411,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E2FBF319392F16006B5880 /* Menu.m in Sources */,
+				A9AFED1B19DB51F7006388BC /* GCHelper.m in Sources */,
 				04E2FBD119392EAF006B5880 /* MyScene.m in Sources */,
 				04E2FBCE19392EAF006B5880 /* ViewController.m in Sources */,
+				A9D722A819E9CC46008BBEB4 /* CircularScene.m in Sources */,
 				04E2FBF619392F44006B5880 /* GameOver.m in Sources */,
 				04E2FBC819392EAE006B5880 /* AppDelegate.m in Sources */,
 				04E2FBC419392EAE006B5880 /* main.m in Sources */,
+				A99BCB2819DE8718005FC6D4 /* SKButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,8 +484,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -453,11 +523,12 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -472,28 +543,46 @@
 		};
 		04E2FBEC19392EAF006B5880 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B9813B2EE82113FA6AD12EA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eljueguito mio/Paddles-Prefix.pch";
 				INFOPLIST_FILE = "eljueguito mio/Paddles-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-6.12.0",
+				);
 				PRODUCT_NAME = Paddles;
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		04E2FBED19392EAF006B5880 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F73EBB131D224C0D8F032B74 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eljueguito mio/Paddles-Prefix.pch";
 				INFOPLIST_FILE = "eljueguito mio/Paddles-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-6.12.0",
+				);
 				PRODUCT_NAME = Paddles;
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

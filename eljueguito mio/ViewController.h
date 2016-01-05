@@ -9,9 +9,18 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 #import <GameKit/GameKit.h>
+#import "GADBannerView.h"
 
-@interface ViewController : UIViewController
+@class GADBannerView;
 
--(void)authenticateLocalPlayer;
+@interface ViewController : UIViewController <GKGameCenterControllerDelegate, GADBannerViewDelegate>
+
+@property GADBannerView *adBanner;
+
+@property (nonatomic) BOOL adsenabled;
+@property BOOL gameCenterEnabled;
+@property NSString *leaderboardIdentifier;
+-(void)showLeaderboardAndAchievements:(BOOL)shouldShowLeaderboard;
+-(void)setAdsenabled:(BOOL)adsenabled;
 
 @end

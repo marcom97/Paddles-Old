@@ -7,19 +7,21 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import <GameKit/GameKit.h>
+#import "ViewController.h"
 
-@interface menu : SKScene <SKPhysicsContactDelegate>
+@interface menu : SKScene <SKPhysicsContactDelegate, GKGameCenterControllerDelegate>
 {
     SKSpriteNode *ball;
-    SKSpriteNode *play;
-    SKSpriteNode *leaderboards;
-    CGPoint location;
-    CGPoint endLocation;
 }
+@property CGPoint location;
+@property CGPoint endLocation;
+
 
 @property (nonatomic) SKSpriteNode *paddle;
 @property (nonatomic) SKSpriteNode *paddleup;
 @property (nonatomic) SKSpriteNode *paddleleft;
 @property (nonatomic) SKSpriteNode *paddleright;
+@property NSString *leaderboardIdentifier;
 
 @end

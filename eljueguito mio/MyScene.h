@@ -8,6 +8,8 @@
 
 #import <SpriteKit/SpriteKit.h>
 #import "GameOver.h"
+#import <AVFoundation/AVFoundation.h>
+#import <GameKit/GameKit.h>
 
 @interface MyScene : SKScene <SKPhysicsContactDelegate>
 {
@@ -18,7 +20,20 @@
     BOOL start;
     BOOL isPlaying;
     CGPoint location;
+    AVAudioPlayer *player;
+    SKSpriteNode *retryConstraint;
+    SKSpriteNode *homeConstraint;
+
 }
 @property (nonatomic) int score;
+@property NSString *leaderboardIdentifier;
+
+@property (nonatomic) SKSpriteNode *paddle;
+@property (nonatomic) SKSpriteNode *paddleup;
+@property (nonatomic) SKSpriteNode *paddleleft;
+@property (nonatomic) SKSpriteNode *paddleright;
+@property (nonatomic)  SKLabelNode* scoreLabel;
+
+-(void)reportScore;
 
 @end

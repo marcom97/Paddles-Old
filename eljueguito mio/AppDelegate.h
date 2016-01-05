@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GameKit/GameKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
 }
 
 @property (strong, nonatomic) UIWindow *window;
-
 
 @end
